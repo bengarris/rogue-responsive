@@ -7,17 +7,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: wrap;
+	flex-flow: row wrap;
 }
 
 .container{
 	max-width: 1200px;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: row wrap;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -46,13 +46,13 @@ p {
 /*The widths are in a percentage!*/
 header {
 	height: auto;
-	width: 90%;
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: wrap;
+	flex-flow: row wrap;
 }
 
 header h1 {
@@ -65,6 +65,7 @@ header h1 span {
 
 header nav {
 	padding: 46px 0;
+	width: 100%
 }
 header nav ul {
 	margin: 0;
@@ -75,7 +76,10 @@ header nav ul li {
 	font-weight: 700;
 	font-size: .875em;
 	padding: 0 10px;
-	display: inline;
+	display: flex;
+	justify-content: center, space-between;
+	align-items: center;
+	flex-flow: column;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -90,7 +94,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: wrap;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -119,7 +123,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
@@ -161,13 +165,14 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	height: auto;
+	width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: wrap;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Galada', cursive;
